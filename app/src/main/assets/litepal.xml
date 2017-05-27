@@ -1,0 +1,9 @@
+<litepal>
+    <dbname value="hehe_weather"/>
+    <version value="1"/>
+    <list>
+        <mapping class="com.garry.heheweather.db.Province"/>
+        <mapping class="com.garry.heheweather.db.City"/>
+        <mapping class="com.garry.heheweather.db.County"/>
+    </list>
+</litepal>
