@@ -19,7 +19,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.garry.heheweather.gson.Forecast;
 import com.garry.heheweather.gson.Weather;
@@ -48,6 +47,7 @@ public class WeatherActivity extends AppCompatActivity {
     private TextView carWashText;
     private TextView sportText;
     private ImageView bingPicImg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,6 +111,7 @@ public class WeatherActivity extends AppCompatActivity {
 
     //根据天气ID请求天气信息
     public void requestWeather(final String weatherId) {
+
         String weatherUrl = "http://guolin.tech/api/weather?cityid=" + weatherId + "&key=5aaa6eaf004b45f1b281c76c62f170c0";
         HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
             @Override
